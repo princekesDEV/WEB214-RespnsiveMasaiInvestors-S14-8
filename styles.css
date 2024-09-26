@@ -1,0 +1,65 @@
+/* Main Investors Part */
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#investors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3%;
+}
+
+#investors > div {
+  text-align: center;
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 7px;
+  overflow: hidden;
+  padding-bottom: 30px;
+  padding-top: 7px;
+}
+
+#investors > div > img:last-child {
+  width: 100px;
+}
+
+#investors > div > img:first-child {
+  width: 100%;
+}
+
+h3 {
+  margin: 5px;
+}
+
+h3 + p {
+  margin: 5px;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 1320px){
+  #investors{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1050px) {
+  #investors{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #investors > div{
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #investors{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #investors > div{
+    padding-bottom: 50px;
+  }
+}
